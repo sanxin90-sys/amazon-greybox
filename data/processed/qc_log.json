@@ -1,0 +1,69 @@
+{
+  "jaru_2008": {
+    "n": 17566,
+    "complete": 0.9996015029033359,
+    "filled": 21,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "jaru_2009": {
+    "n": 17519,
+    "complete": 1.0,
+    "filled": 12,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "jaru_2010": {
+    "n": 17519,
+    "complete": 0.9680347051772361,
+    "filled": 37,
+    "months_nocturnal_R_above_bound": {
+      "2010-04": 286,
+      "2010-06": 41,
+      "2010-10": 24,
+      "2010-11": 55
+    }
+  },
+  "sinop_2001_04": {
+    "n": 1440,
+    "complete": 1.0,
+    "filled": 0,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "sinop_2001_05": {
+    "n": 1488,
+    "complete": 1.0,
+    "filled": 0,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "sinop_2002_06": {
+    "n": 1440,
+    "complete": 1.0,
+    "filled": 0,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "sinop_2003_08": {
+    "n": 1488,
+    "complete": 1.0,
+    "filled": 0,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "sinop_2003_09": {
+    "n": 1440,
+    "complete": 0.9763888888888889,
+    "filled": 1,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "excluded_Met Nov-03.xls": "mean net radiation 00-04 h = 340 W m-2 (sensor fault)",
+  "excluded_Met Dec-03.xls": "mean net radiation 00-04 h = 63 W m-2 (sensor fault)",
+  "cuieiras_2003": {
+    "n": 6672,
+    "complete": 0.8955335731414868,
+    "filled": 6,
+    "months_nocturnal_R_above_bound": {}
+  },
+  "cuieiras_2004": {
+    "n": 17568,
+    "complete": 0.6497609289617486,
+    "filled": 3,
+    "months_nocturnal_R_above_bound": {}
+  }
+}

@@ -1,0 +1,13 @@
+# Versions used to produce the results in the manuscript (CPU). Install with
+#   pip install -r requirements-exact.txt
+# On machines without a GPU, a smaller PyTorch build is available with
+#   pip install torch~=2.14.0 --index-url https://download.pytorch.org/whl/cpu
+torch~=2.14.0
+numpy~=2.5.0
+pandas~=3.0.0
+scipy~=1.18.0
+scikit-learn~=1.9.0
+matplotlib~=3.11.0
+openpyxl~=3.1.0
+xlrd~=2.0.0
+pytest>=8.0

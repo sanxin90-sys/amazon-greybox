@@ -1,0 +1,1501 @@
+{
+ "data": {
+  "label": "Table 1",
+  "caption": "Data blocks used in this study: number of complete half-hourly records (*n*), mean air temperature (*T̄*), mean diurnal temperature range (DTR), mean net radiation (*R̄*) and mean relative humidity (RH). Rebio Jaru 2008 is split chronologically into training (70%), validation (15%) and test (15%) blocks; all other blocks are independent.",
+  "header": [
+   "Season",
+   "Block",
+   "*n*",
+   "*T̄* (°C)",
+   "DTR (K)",
+   "*R̄* (W m⁻²)",
+   "RH (%)"
+  ],
+  "widths": [
+   10,
+   30,
+   10,
+   12,
+   12,
+   14,
+   12
+  ],
+  "rows": [
+   [
+    "Dry",
+    "Jaru 2008 (calibration)",
+    "4415",
+    "27.0",
+    "11.7",
+    "144",
+    "65"
+   ],
+   [
+    "Dry",
+    "Jaru 2009",
+    "4416",
+    "22.8",
+    "11.5",
+    "129",
+    "74"
+   ],
+   [
+    "Dry",
+    "Jaru 2010",
+    "4416",
+    "26.7",
+    "11.7",
+    "131",
+    "64"
+   ],
+   [
+    "Dry",
+    "Sinop Jun 2002",
+    "1440",
+    "23.6",
+    "15.1",
+    "103",
+    "72"
+   ],
+   [
+    "Dry",
+    "Sinop Aug–Sep 2003",
+    "2894",
+    "25.1",
+    "14.2",
+    "111",
+    "69"
+   ],
+   [
+    "Dry",
+    "Cuieiras Aug–Oct 2003",
+    "3744",
+    "26.5",
+    "8.0",
+    "159",
+    "86"
+   ],
+   [
+    "Wet",
+    "Jaru 2008 (calibration)",
+    "4368",
+    "24.5",
+    "6.1",
+    "109",
+    "89"
+   ],
+   [
+    "Wet",
+    "Jaru 2009",
+    "4320",
+    "22.4",
+    "7.5",
+    "127",
+    "86"
+   ],
+   [
+    "Wet",
+    "Jaru 2010",
+    "4320",
+    "25.7",
+    "6.6",
+    "121",
+    "88"
+   ],
+   [
+    "Wet",
+    "Sinop Apr–May 2001",
+    "2928",
+    "24.9",
+    "10.8",
+    "132",
+    "84"
+   ],
+   [
+    "Wet",
+    "Cuieiras Jan–Mar 2004",
+    "1787",
+    "25.7",
+    "6.5",
+    "133",
+    "92"
+   ]
+  ],
+  "note": "Rebio Jaru 2009: temperature about 3 K lower than in the other years, suspected instrumental offset (Section 2.1)."
+ },
+ "params": {
+  "label": "Table 3",
+  "caption": "Physical parameters of the physics-only models calibrated on Rebio Jaru 2008 (median ± standard deviation over the ten ensemble members) and free-run RMSE (K) on the 2008 test block. Published values are given for reference.",
+  "header": [
+   "Season",
+   "Model",
+   "α (10⁻³ m⁻¹)",
+   "γ (10⁻⁴ m⁻¹)",
+   "β (10⁻³ W m⁻³ %⁻¹)",
+   "δ (J m⁻³ %⁻¹)",
+   "RMSE (K)"
+  ],
+  "widths": [
+   9,
+   26,
+   14,
+   14,
+   15,
+   13,
+   9
+  ],
+  "rows": [
+   [
+    "Dry",
+    "Dry",
+    "1.10 ± 0.02",
+    "2.86 ± 0.05",
+    "–",
+    "–",
+    "8.37"
+   ],
+   [
+    "Dry",
+    "Moist open",
+    "0.58 ± 0.00",
+    "6.12 ± 0.00",
+    "2.87 ± 0.00",
+    "164 ± 0",
+    "3.96"
+   ],
+   [
+    "Dry",
+    "Moist closed",
+    "1.15 ± 0.04",
+    "12.85 ± 0.63",
+    "6.54 ± 0.39",
+    "89 ± 6",
+    "1.99"
+   ],
+   [
+    "Wet",
+    "Dry",
+    "0.70 ± 0.03",
+    "1.58 ± 0.02",
+    "–",
+    "–",
+    "2.53"
+   ],
+   [
+    "Wet",
+    "Moist open",
+    "0.23 ± 0.02",
+    "4.45 ± 0.36",
+    "1.95 ± 0.16",
+    "226 ± 4",
+    "0.92"
+   ],
+   [
+    "Wet",
+    "Moist closed",
+    "1.08 ± 0.23",
+    "28.09 ± 6.93",
+    "12.88 ± 3.21",
+    "53 ± 34",
+    "0.97"
+   ],
+   [
+    "Ref.",
+    "Dry [depaulo2023]",
+    "2.70",
+    "6.50",
+    "–",
+    "–",
+    "–"
+   ],
+   [
+    "Ref.",
+    "Moist open, Jaru [maionchi2025]",
+    "0.55",
+    "6.50",
+    "2.70",
+    "154",
+    "–"
+   ]
+  ],
+  "note": "The closed-model δ is bounded by δ_max = 167.6 J m⁻³ %⁻¹ (Equation (4))."
+ },
+ "scores": {
+  "label": "Table 4",
+  "caption": "Skill of all models. In sample: Rebio Jaru 2008 test block (free-run RMSE, 24-h forecast RMSE and Kling–Gupta efficiency of the free run). Out of sample: means over Jaru 2010, Sinop and Cuieiras of the free-run RMSE, the 24-h forecast RMSE, the forecast skill score relative to 24-h persistence (pooled over the sets), the 90% coverage and the CRPS of the free run; Jaru 2009 is reported separately with the centred RMSE of the free run. RMSE and CRPS in K.",
+  "header": [
+   "Model",
+   "FR RMSE",
+   "FC RMSE",
+   "FR KGE",
+   "FR RMSE",
+   "FC RMSE",
+   "SS_{pers}",
+   "J09 cRMSE",
+   "Cov. 90%",
+   "CRPS"
+  ],
+  "group": [
+   "",
+   "In sample",
+   "",
+   "",
+   "Out of sample",
+   "",
+   "",
+   "",
+   "",
+   ""
+  ],
+  "widths": [
+   25,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   9,
+   8,
+   8
+  ],
+  "size": 16,
+  "rows": [
+   [
+    "Dry season"
+   ],
+   [
+    "Dry (physics)",
+    "8.37",
+    "3.08",
+    "0.20",
+    "12.23ᵈ",
+    "4.64",
+    "−4.19",
+    "13.48",
+    "0.84",
+    "7.71"
+   ],
+   [
+    "Moist open (physics)",
+    "3.96",
+    "1.48",
+    "0.89",
+    "7.37",
+    "2.41",
+    "−0.33",
+    "3.43",
+    "0.41",
+    "5.65"
+   ],
+   [
+    "Moist closed (physics)",
+    "1.99",
+    "1.76",
+    "0.89",
+    "3.68",
+    "3.34",
+    "−1.78",
+    "2.63",
+    "0.63",
+    "2.33"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "1.56",
+    "1.34",
+    "0.92",
+    "3.13",
+    "2.55",
+    "−0.47",
+    "2.14",
+    "0.72",
+    "1.81"
+   ],
+   [
+    "Dry + additive",
+    "1.50",
+    "1.37",
+    "0.93",
+    "2.88",
+    "2.58",
+    "−0.57",
+    "2.01",
+    "0.73",
+    "1.70"
+   ],
+   [
+    "Dry + multiplicative",
+    "1.54",
+    "1.46",
+    "0.94",
+    "2.96",
+    "2.49",
+    "−0.45",
+    "2.20",
+    "0.72",
+    "1.76"
+   ],
+   [
+    "Dry + hybrid",
+    "1.53",
+    "1.30",
+    "0.90",
+    "2.90",
+    "2.41",
+    "−0.34",
+    "2.18",
+    "0.69",
+    "1.74"
+   ],
+   [
+    "Moist + additive (T, R)",
+    "1.59",
+    "1.43",
+    "0.92",
+    "3.12",
+    "2.68",
+    "−0.69",
+    "2.10",
+    "0.70",
+    "1.85"
+   ],
+   [
+    "Moist + additive",
+    "1.51",
+    "1.36",
+    "0.93",
+    "3.09",
+    "2.67",
+    "−0.69",
+    "2.20",
+    "0.71",
+    "1.84"
+   ],
+   [
+    "Moist + multiplicative",
+    "1.55",
+    "1.37",
+    "0.93",
+    "2.85",
+    "2.66",
+    "−0.74",
+    "2.46",
+    "0.67",
+    "1.76"
+   ],
+   [
+    "Moist + hybrid",
+    "1.57",
+    "1.37",
+    "0.91",
+    "3.10",
+    "2.62",
+    "−0.61",
+    "2.31",
+    "0.71",
+    "1.85"
+   ],
+   [
+    "Black box",
+    "1.51",
+    "1.34",
+    "0.89",
+    "2.90",
+    "2.46",
+    "−0.38",
+    "2.06",
+    "0.73",
+    "1.69"
+   ],
+   [
+    "Wet season"
+   ],
+   [
+    "Dry (physics)",
+    "2.53",
+    "2.00",
+    "0.42",
+    "15.75",
+    "2.73",
+    "−0.57",
+    "6.08",
+    "0.19",
+    "11.97"
+   ],
+   [
+    "Moist open (physics)",
+    "0.92",
+    "0.61",
+    "0.95",
+    "2.02",
+    "1.01",
+    "0.79",
+    "1.26",
+    "0.53",
+    "1.34"
+   ],
+   [
+    "Moist closed (physics)",
+    "0.97",
+    "0.91",
+    "0.85",
+    "1.65",
+    "1.61",
+    "0.42",
+    "1.31",
+    "0.77",
+    "0.96"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "1.03",
+    "0.92",
+    "0.84",
+    "1.63",
+    "1.49",
+    "0.55",
+    "1.23",
+    "0.69",
+    "0.98"
+   ],
+   [
+    "Dry + additive",
+    "0.92",
+    "0.84",
+    "0.85",
+    "1.59",
+    "1.54",
+    "0.48",
+    "1.41",
+    "0.77",
+    "0.91"
+   ],
+   [
+    "Dry + multiplicative",
+    "0.99",
+    "0.97",
+    "0.82",
+    "1.77",
+    "1.69",
+    "0.40",
+    "14.23ᵈ",
+    "0.80",
+    "0.99"
+   ],
+   [
+    "Dry + hybrid",
+    "0.93",
+    "0.85",
+    "0.86",
+    "1.53",
+    "1.49",
+    "0.53",
+    "1.49",
+    "0.78",
+    "0.87"
+   ],
+   [
+    "Moist + additive (T, R)",
+    "0.82",
+    "0.79",
+    "0.87",
+    "1.53",
+    "1.49",
+    "0.52",
+    "1.18",
+    "0.79",
+    "0.85"
+   ],
+   [
+    "Moist + additive",
+    "0.89",
+    "0.83",
+    "0.86",
+    "1.59",
+    "1.54",
+    "0.49",
+    "1.31",
+    "0.73",
+    "0.91"
+   ],
+   [
+    "Moist + multiplicative",
+    "0.83",
+    "0.77",
+    "0.88",
+    "1.49",
+    "1.45",
+    "0.54",
+    "1.18",
+    "0.80",
+    "0.82"
+   ],
+   [
+    "Moist + hybrid",
+    "0.92",
+    "0.85",
+    "0.83",
+    "1.60",
+    "1.56",
+    "0.48",
+    "1.37",
+    "0.73",
+    "0.92"
+   ],
+   [
+    "Black box",
+    "0.90",
+    "0.82",
+    "0.86",
+    "1.59",
+    "1.53",
+    "0.50",
+    "1.39",
+    "0.75",
+    "0.91"
+   ]
+  ],
+  "note": "FR: free run; FC: 24-h forecasts initialised daily at 00:30 local time; SS_{pers} = 1 − MSE/MSE_{pers}. ᵈ The free run left the plausible range of 250–340 K in at least one set (diverged, RMSE above 10 K); that set also enters the out-of-sample coverage and CRPS. Mean baselines on the out-of-sample sets (dry/wet): persistence RMSE 2.05/2.23 K, climatology RMSE 3.27/2.26 K."
+ },
+ "proscons": {
+  "label": "Table 8",
+  "caption": "Strengths and weaknesses of the model classes and of the reference protocol, as found in this study.",
+  "header": [
+   "Model",
+   "Strengths",
+   "Weaknesses"
+  ],
+  "widths": [
+   22,
+   38,
+   40
+  ],
+  "align": "left",
+  "rows": [
+   [
+    "Dry physics [depaulo2023]",
+    "Two parameters with a radiative meaning; analytical nocturnal solution",
+    "No humidity dependence; relaxation time of 190–340 h at 300 K, against 3–7 h for the closed moist and corrected models, so free runs can drift by more than 10 K; 24-h forecasts less accurate than climatology on the test block"
+   ],
+   [
+    "Open moist physics [maionchi2025]",
+    "Represents the humidity dependence of cooling; most accurate 24-h forecasts in the wet season, probably owing to the leakage",
+    "Forced by the observed humidity tendency, which contains the observed temperature tendency; unstable in free run out of sample in the dry season; δ near or beyond the well-posedness bound"
+   ],
+   [
+    "Closed moist physics (this study)",
+    "Four parameters; stable in every block; lowest mean out-of-sample free-run error of the physics-only models; reproduces most of the humidity dependence of nocturnal cooling in the wet season and a weaker version of it in the dry season; relaxation time similar to that learned by the corrections; parameters can be re-estimated from a few days of data at a new site",
+    "Restoring relies mainly on the humidity feedback, so the accuracy depends on an accurate vapour pressure; δ poorly identified in the wet season; physical meaning of the humidity term unresolved"
+   ],
+   [
+    "Additive correction",
+    "Simplest coupling; improved the mean out-of-sample skill of both white boxes; its degree-1 distillation is an explicit equation (linear relaxation and stronger radiative heating)",
+    "The correction can override the physics; physical reading only after distillation"
+   ],
+   [
+    "Multiplicative correction",
+    "Bounded modulation of the physical tendency; lowest mean out-of-sample free-run error in the wet season when applied to the closed moist model",
+    "Did not prevent the drift of an unstable white box outside the training range (divergence of the dry model at Jaru 2009, wet season); its degree-1 distillation diverged for the dry model"
+   ],
+   [
+    "Hybrid correction",
+    "State-dependent physical coefficients; the logarithm of the absorption factor is close to a linear function of the inputs, dominated by air temperature (R² of 0.91–0.95 at degree 1 in the dry season); physical parameters alone could be adapted to new sites",
+    "Most outputs; no consistent accuracy gain over the additive form; modulation and residual terms may trade off (not tested here)"
+   ],
+   [
+    "Black-box ODE-net",
+    "Accuracy similar to that of the gray boxes, without a physical prior; its distillation gives a relaxation rate similar to that of the corrected dry model",
+    "No interpretable parameters; smallest response to a change of radiation; full fine-tuning degraded its free run at Cuieiras (wet season)"
+   ],
+   [
+    "Protocol of Silva et al. [silva2026]",
+    "Simple and fast; reproduces the published parameters; its polynomial reproduces the network trajectories",
+    "Scores computed on the training season; open-loop bootstrap bands tens of kelvin wide; polynomial terms in unscaled variables largely cancel, and their ranking depends on the origin of the temperature scale (kelvin or degrees Celsius)"
+   ]
+  ]
+ },
+ "silva": {
+  "label": "Table 2",
+  "caption": "Re-implementation of the protocol of Silva et al. [silva2026] on Rebio Jaru 2008 (whole season, as in the original study): fitted parameters (α^{*} in K m² W⁻¹ per 10⁶ s; γ^{*} in 10⁻⁸ K⁻³ per 10⁶ s), RMSE (K) of the uncorrected (RK4) and corrected (Euler) free runs, and RMSE of the mean, coverage of the 5–95% band and mean band width (K) of the 100-member bootstrap ensemble integrated open loop (as in the original study) and of 20 members integrated closed loop.",
+  "header": [
+   "Version",
+   "α^{*}",
+   "γ^{*} (10⁻⁸)",
+   "Physics",
+   "Corrected",
+   "RMSE of mean",
+   "Coverage",
+   "Width (K)"
+  ],
+  "group": [
+   "",
+   "Parameters",
+   "",
+   "Single-model RMSE",
+   "",
+   "Bootstrap ensemble",
+   "",
+   ""
+  ],
+  "widths": [
+   21,
+   8,
+   9,
+   10,
+   12,
+   10,
+   12,
+   10
+  ],
+  "rows": [
+   [
+    "Dry season"
+   ],
+   [
+    "Published [silva2026]",
+    "1.1588",
+    "2.05",
+    "3.66 (3.62)",
+    "1.40",
+    "7.42",
+    "0.94",
+    "26.9"
+   ],
+   [
+    "Re-implementation (ensemble open loop)",
+    "1.1592",
+    "2.04",
+    "3.42",
+    "1.51",
+    "7.95",
+    "0.90",
+    "26.0"
+   ],
+   [
+    "Same members, closed loop",
+    "–",
+    "–",
+    "–",
+    "–",
+    "1.52",
+    "0.35",
+    "1.2"
+   ],
+   [
+    "Wet season"
+   ],
+   [
+    "Published [silva2026]",
+    "0.2710",
+    "0.375",
+    "2.57 (2.54)",
+    "1.13",
+    "7.78",
+    "0.96",
+    "79.1"
+   ],
+   [
+    "Re-implementation (ensemble open loop)",
+    "0.2694",
+    "0.377",
+    "2.52",
+    "1.19",
+    "8.80",
+    "0.97",
+    "77.9"
+   ],
+   [
+    "Same members, closed loop",
+    "–",
+    "–",
+    "–",
+    "–",
+    "1.11",
+    "0.16",
+    "0.4"
+   ]
+  ],
+  "note": "Published uncorrected RMSE from the parameter table (and from the text, in parentheses); published band widths from Tables X and XI of Silva et al. [silva2026]. The re-implementation uses the authors' notebook logic with the data prepared in Section 2.1, which differs slightly from the spreadsheets used in the original study."
+ },
+ "poly": {
+  "label": "Table 5",
+  "caption": "Polynomial distillation of the learned corrections. Each member's network is replaced by polynomials of degree 1 or 2 in its standardised inputs ((*T*, *R*), or (*T*, *R*, *e*) for the networks with humidity inputs), fitted to the network output at the observed states of the training block; the distilled ensembles are integrated with the same scheme as the networks. R²: share of the variance of the network output explained by the polynomial on the training states (lowest value over the outputs of the hybrid form). FR RMSE: free-run RMSE (K) on the Rebio Jaru 2008 test block (in sample) and mean over Jaru 2010, Sinop and Cuieiras (out of sample); SS_{pers}: pooled skill score of the 24-h forecasts relative to persistence on the same out-of-sample sets.",
+  "header": [
+   "Model",
+   "FR in",
+   "FR out",
+   "SS_{pers}",
+   "R²",
+   "FR in",
+   "FR out",
+   "SS_{pers}",
+   "R²",
+   "FR in",
+   "FR out",
+   "SS_{pers}"
+  ],
+  "group": [
+   "",
+   "Network",
+   "",
+   "",
+   "Degree 1",
+   "",
+   "",
+   "",
+   "Degree 2",
+   "",
+   "",
+   ""
+  ],
+  "widths": [
+   22,
+   7,
+   7,
+   7.5,
+   6.5,
+   7,
+   7,
+   7.5,
+   6.5,
+   7,
+   7,
+   7.5
+  ],
+  "size": 15,
+  "rows": [
+   [
+    "Dry season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "1.56",
+    "3.13",
+    "−0.48",
+    "0.66",
+    "1.81",
+    "3.29",
+    "−0.79",
+    "0.93",
+    "1.65",
+    "3.21",
+    "−0.63"
+   ],
+   [
+    "Dry + additive",
+    "1.50",
+    "2.88",
+    "−0.57",
+    "0.69",
+    "1.75",
+    "3.32",
+    "−0.90",
+    "0.95",
+    "1.53",
+    "2.64",
+    "−0.24"
+   ],
+   [
+    "Dry + multiplicative",
+    "1.54",
+    "2.96",
+    "−0.45",
+    "0.22",
+    "div.",
+    "div.",
+    "div.",
+    "0.78",
+    "1.78",
+    "3.60",
+    "−1.15"
+   ],
+   [
+    "Dry + hybrid",
+    "1.53",
+    "2.90",
+    "−0.34",
+    "0.85",
+    "1.57",
+    "3.24",
+    "−0.60",
+    "0.93",
+    "1.45",
+    "2.67",
+    "−0.13"
+   ],
+   [
+    "Moist + additive (T, R)",
+    "1.59",
+    "3.12",
+    "−0.69",
+    "0.38",
+    "1.74",
+    "3.29",
+    "−0.93",
+    "0.91",
+    "1.63",
+    "3.19",
+    "−0.71"
+   ],
+   [
+    "Moist + additive",
+    "1.51",
+    "3.09",
+    "−0.69",
+    "0.29",
+    "1.73",
+    "3.19",
+    "−0.86",
+    "0.85",
+    "1.58",
+    "2.90",
+    "−0.43"
+   ],
+   [
+    "Moist + multiplicative",
+    "1.55",
+    "2.85",
+    "−0.74",
+    "0.86",
+    "1.89",
+    "3.23",
+    "−1.23",
+    "0.96",
+    "1.58",
+    "2.65",
+    "−0.42"
+   ],
+   [
+    "Moist + hybrid",
+    "1.57",
+    "3.10",
+    "−0.62",
+    "0.92",
+    "1.62",
+    "3.01",
+    "−0.50",
+    "0.96",
+    "1.59",
+    "2.93",
+    "−0.39"
+   ],
+   [
+    "Black box",
+    "1.51",
+    "2.90",
+    "−0.38",
+    "0.90",
+    "1.74",
+    "3.32",
+    "−0.84",
+    "0.97",
+    "1.55",
+    "2.82",
+    "−0.38"
+   ],
+   [
+    "Wet season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "1.03",
+    "1.63",
+    "0.55",
+    "0.52",
+    "1.13",
+    "1.75",
+    "0.44",
+    "0.78",
+    "1.14",
+    "1.65",
+    "0.51"
+   ],
+   [
+    "Dry + additive",
+    "0.92",
+    "1.59",
+    "0.48",
+    "0.56",
+    "0.97",
+    "1.58",
+    "0.48",
+    "0.90",
+    "0.93",
+    "div.",
+    "div."
+   ],
+   [
+    "Dry + multiplicative",
+    "0.99",
+    "1.77",
+    "0.39",
+    "0.22",
+    "5.74",
+    "div.",
+    "div.",
+    "0.61",
+    "1.28",
+    "1.81",
+    "0.39"
+   ],
+   [
+    "Dry + hybrid",
+    "0.93",
+    "1.53",
+    "0.52",
+    "0.71",
+    "0.97",
+    "1.54",
+    "0.52",
+    "0.94",
+    "0.93",
+    "div.",
+    "div."
+   ],
+   [
+    "Moist + additive (T, R)",
+    "0.82",
+    "1.53",
+    "0.52",
+    "0.22",
+    "0.99",
+    "1.56",
+    "0.48",
+    "0.40",
+    "1.04",
+    "1.55",
+    "0.54"
+   ],
+   [
+    "Moist + additive",
+    "0.89",
+    "1.59",
+    "0.49",
+    "0.31",
+    "0.96",
+    "1.57",
+    "0.47",
+    "0.79",
+    "0.93",
+    "1.66",
+    "0.51"
+   ],
+   [
+    "Moist + multiplicative",
+    "0.83",
+    "1.49",
+    "0.54",
+    "0.06",
+    "1.06",
+    "1.76",
+    "0.33",
+    "0.45",
+    "0.90",
+    "1.40",
+    "0.61"
+   ],
+   [
+    "Moist + hybrid",
+    "0.92",
+    "1.60",
+    "0.48",
+    "0.71",
+    "0.93",
+    "1.49",
+    "0.53",
+    "0.86",
+    "0.95",
+    "1.49",
+    "0.56"
+   ],
+   [
+    "Black box",
+    "0.90",
+    "1.59",
+    "0.49",
+    "0.64",
+    "0.97",
+    "1.60",
+    "0.46",
+    "0.90",
+    "0.93",
+    "div.",
+    "div."
+   ]
+  ],
+  "note": "div.: the free run diverged in at least one set (RMSE above 10 K, or a member left the plausible range of 250–340 K), or the mean forecast RMSE exceeded 10 K; the skill score is then not given. Inputs of the polynomials are clipped to the range of the training block. Results for degrees 3 and 4 and without clipping are given in the supplementary file polynomial_summary.csv."
+ },
+ "polycoef": {
+  "label": "Table 6",
+  "caption": "Degree-1 distillation of the additive corrections (Equation (6)) in physical units (medians over the ten members). α: absorption coefficient of the white box trained with the correction; α_{eff} = α + C b_{R}/3600, with C = ρc for the dry model and the effective heat capacity of Equation (4) for the closed moist model; λ_{W}: linear restoring rate of the white box at the mean state, 3600 (4γσT̄³ + β RH d ln e_{s}/dT)/C, with the humidity part only for the closed moist model; λ_{N} = −b_{T}: restoring rate added by the correction at fixed vapour pressure (5–95% range over the members); τ = 1/(λ_{W} + λ_{N}): total relaxation time.",
+  "header": [
+   "Model",
+   "a₀ (K h⁻¹)",
+   "b_{R} (10⁻³ K h⁻¹ W⁻¹ m²)",
+   "b_{e} (K h⁻¹ kPa⁻¹)",
+   "α (10⁻³ m⁻¹)",
+   "α_{eff} (10⁻³ m⁻¹)",
+   "λ_{W} (h⁻¹)",
+   "λ_{N} (h⁻¹)",
+   "τ (h)"
+  ],
+  "widths": [
+   21,
+   9,
+   12,
+   11,
+   9,
+   10,
+   9,
+   13,
+   6
+  ],
+  "size": 15,
+  "rows": [
+   [
+    "Dry season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "−0.09",
+    "1.82",
+    "–",
+    "1.02",
+    "1.62",
+    "0.004",
+    "0.161 (0.150–0.169)",
+    "6.1"
+   ],
+   [
+    "Dry + additive",
+    "−0.14",
+    "1.60",
+    "0.26",
+    "1.07",
+    "1.61",
+    "0.004",
+    "0.157 (0.149–0.167)",
+    "6.2"
+   ],
+   [
+    "Moist + additive (T, R)",
+    "0.27",
+    "0.81",
+    "–",
+    "1.23",
+    "1.48",
+    "0.081",
+    "0.090 (0.084–0.108)",
+    "5.8"
+   ],
+   [
+    "Moist + additive",
+    "−0.08",
+    "0.35",
+    "−0.30",
+    "1.21",
+    "1.35",
+    "0.121",
+    "0.042 (0.025–0.049)",
+    "6.2"
+   ],
+   [
+    "Black box",
+    "0.01",
+    "4.73",
+    "0.17",
+    "–",
+    "1.58",
+    "–",
+    "0.159 (0.153–0.166)",
+    "6.3"
+   ],
+   [
+    "Wet season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "−0.03",
+    "1.76",
+    "–",
+    "0.61",
+    "1.23",
+    "0.002",
+    "0.247 (0.223–0.265)",
+    "4.0"
+   ],
+   [
+    "Dry + additive",
+    "0.01",
+    "2.00",
+    "0.97",
+    "0.60",
+    "1.25",
+    "0.003",
+    "0.282 (0.254–0.308)",
+    "3.5"
+   ],
+   [
+    "Moist + additive (T, R)",
+    "−0.61",
+    "1.52",
+    "–",
+    "1.01",
+    "1.66",
+    "0.222",
+    "0.110 (0.078–0.144)",
+    "3.0"
+   ],
+   [
+    "Moist + additive",
+    "−0.27",
+    "1.66",
+    "0.23",
+    "0.92",
+    "1.61",
+    "0.208",
+    "0.095 (0.073–0.125)",
+    "3.3"
+   ],
+   [
+    "Black box",
+    "0.01",
+    "3.71",
+    "1.12",
+    "–",
+    "1.23",
+    "–",
+    "0.271 (0.247–0.292)",
+    "3.7"
+   ]
+  ],
+  "note": "Mean states of the training blocks (dry: T̄ = 26.8 °C, R̄ = 142 W m⁻², ē = 2.18 kPa; wet: T̄ = 24.6 °C, R̄ = 113 W m⁻², ē = 2.70 kPa). For the black box the whole tendency is distilled: a₀ is its value at the mean state, λ_{N} its restoring rate and α_{eff} = ρc b_{R}/3600."
+ },
+ "explicit": {
+  "label": "Table 7",
+  "caption": "Coefficients of the explicit equations (7)–(12) (degree-1 distillation; medians over the ten members). ℓ: logarithm of a multiplicative or hybrid factor; c and c₀: additive correction and residual. Each is linear about the mean state of the training block (Equation (13)): ℓ̄ is its value at the mean state and the next three columns are its slopes per unit of T, R and e. α, γ, β and δ: physical parameters of the trained model. RMSE: free-run RMSE (K) of the single explicit equation on the 2008 test block / mean over the independent sets (Jaru 2009 excluded).",
+  "header": [
+   "Model",
+   "Term",
+   "ℓ̄ or c̄",
+   "per K",
+   "per 100 W m⁻²",
+   "per kPa",
+   "α (10⁻³ m⁻¹)",
+   "γ (10⁻⁴ m⁻¹)",
+   "β (10⁻³ W m⁻³ %⁻¹)",
+   "δ (J m⁻³ %⁻¹)",
+   "RMSE (K)"
+  ],
+  "widths": [
+   15,
+   9,
+   8,
+   8,
+   9,
+   8,
+   8,
+   8,
+   9,
+   8,
+   10
+  ],
+  "size": 14,
+  "rows": [
+   [
+    "Dry season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "c (K h⁻¹)",
+    "−0.088",
+    "−0.161",
+    "0.182",
+    "–",
+    "1.02",
+    "2.41",
+    "–",
+    "–",
+    "1.78 / 3.29"
+   ],
+   [
+    "Dry + multiplicative",
+    "ℓ_{m}",
+    "−0.135",
+    "0.033",
+    "−0.167",
+    "0.262",
+    "1.56",
+    "2.96",
+    "–",
+    "–",
+    "div."
+   ],
+   [
+    "Dry + hybrid",
+    "ℓ_{α}",
+    "0.079",
+    "−0.173",
+    "0.065",
+    "0.211",
+    "1.42",
+    "2.89",
+    "–",
+    "–",
+    "1.57 / 3.27"
+   ],
+   [
+    "",
+    "ℓ_{γ}",
+    "0.016",
+    "0.004",
+    "−0.045",
+    "0.044",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "c₀ (K h⁻¹)",
+    "−0.006",
+    "−0.111",
+    "0.099",
+    "0.223",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Moist + additive",
+    "c (K h⁻¹)",
+    "−0.076",
+    "−0.042",
+    "0.035",
+    "−0.303",
+    "1.21",
+    "12.79",
+    "6.79",
+    "46",
+    "1.76 / 3.20"
+   ],
+   [
+    "Moist + multiplicative",
+    "ℓ_{m}",
+    "0.256",
+    "−0.111",
+    "0.019",
+    "0.150",
+    "1.14",
+    "13.77",
+    "7.03",
+    "67",
+    "1.89 / 3.24"
+   ],
+   [
+    "Moist + hybrid",
+    "ℓ_{α}",
+    "0.043",
+    "−0.087",
+    "0.002",
+    "0.039",
+    "1.20",
+    "12.46",
+    "6.68",
+    "83",
+    "1.65 / 3.00"
+   ],
+   [
+    "",
+    "ℓ_{γ}",
+    "−0.008",
+    "−0.010",
+    "0.004",
+    "0.161",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "ℓ_{β}",
+    "0.000",
+    "−0.018",
+    "0.042",
+    "0.061",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "c₀ (K h⁻¹)",
+    "0.009",
+    "0.002",
+    "−0.003",
+    "−0.088",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Wet season"
+   ],
+   [
+    "Dry + additive (T, R)",
+    "c (K h⁻¹)",
+    "−0.030",
+    "−0.247",
+    "0.176",
+    "–",
+    "0.61",
+    "1.39",
+    "–",
+    "–",
+    "1.13 / 1.77"
+   ],
+   [
+    "Dry + multiplicative",
+    "ℓ_{m}",
+    "−0.427",
+    "0.251",
+    "−0.217",
+    "1.094",
+    "1.00",
+    "2.15",
+    "–",
+    "–",
+    "5.09 / 5.22"
+   ],
+   [
+    "Dry + hybrid",
+    "ℓ_{α}",
+    "0.050",
+    "−0.181",
+    "0.103",
+    "0.041",
+    "0.77",
+    "1.78",
+    "–",
+    "–",
+    "0.97 / 1.55"
+   ],
+   [
+    "",
+    "ℓ_{γ}",
+    "0.034",
+    "0.229",
+    "−0.126",
+    "−0.657",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "c₀ (K h⁻¹)",
+    "0.002",
+    "−0.176",
+    "0.106",
+    "0.700",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Moist + additive",
+    "c (K h⁻¹)",
+    "−0.267",
+    "−0.095",
+    "0.166",
+    "0.229",
+    "0.92",
+    "26.78",
+    "13.69",
+    "−63",
+    "0.95 / 1.57"
+   ],
+   [
+    "Moist + multiplicative",
+    "ℓ_{m}",
+    "0.044",
+    "−0.027",
+    "0.016",
+    "1.464",
+    "1.40",
+    "28.71",
+    "12.67",
+    "−83",
+    "1.06 / 1.84"
+   ],
+   [
+    "Moist + hybrid",
+    "ℓ_{α}",
+    "−0.043",
+    "−0.046",
+    "0.036",
+    "−0.274",
+    "1.04",
+    "27.57",
+    "13.35",
+    "−34",
+    "0.93 / 1.50"
+   ],
+   [
+    "",
+    "ℓ_{γ}",
+    "0.024",
+    "−0.010",
+    "0.008",
+    "0.589",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "ℓ_{β}",
+    "−0.022",
+    "−0.048",
+    "0.054",
+    "0.882",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "",
+    "c₀ (K h⁻¹)",
+    "−0.014",
+    "0.006",
+    "0.000",
+    "−0.170",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ]
+  ],
+  "note": "Mean states as in Table 6. div.: free-run RMSE above 10 K, or a simulated temperature outside 250–340 K, in the test block or an independent set. The inputs are not clipped. The dry model with the additive correction and inputs (T, R) is Equation (7)."
+ }
+}

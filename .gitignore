@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+# raw tower spreadsheets are not redistributed (see data/raw/README.md)
+data/raw/*
+!data/raw/README.md

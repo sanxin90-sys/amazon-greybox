@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article and the software as below."
+title: "amazon_graybox: physics-guided neural corrections of energy-balance models for near-surface air temperature in Amazonian forests"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/[USER]/amazon-graybox"
+authors:
+  - family-names: "[Surname 1]"
+    given-names: "[Given names 1]"
+    affiliation: "[Affiliation]"
+  - family-names: "[Surname 2]"
+    given-names: "[Given names 2]"
+preferred-citation:
+  type: article
+  title: "Physics-guided neural corrections of dry and humidity-aware energy-balance models for near-surface air temperature in Amazonian forests"
+  journal: "Agricultural and Forest Meteorology"
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: "[Surname 1]"
+      given-names: "[Given names 1]"
+    - family-names: "[Surname 2]"
+      given-names: "[Given names 2]"
